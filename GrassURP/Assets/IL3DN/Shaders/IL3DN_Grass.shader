@@ -18,7 +18,7 @@ Shader "IL3DN/Grass"
 
 	SubShader
 	{
-		Tags{ "RenderType" = "TransparentCutout"  "Queue" = "AlphaTest+0" }
+		Tags{"RenderType" = "Transparent" "RenderPipeline" = "UniversalRenderPipeline" "IgnoreProjector" = "True" "Queue" = "AlphaTest+0" "LightMode" = "UniversalForward"}
 		Cull Off
 		CGPROGRAM
 		#include "UnityShaderVariables.cginc"
